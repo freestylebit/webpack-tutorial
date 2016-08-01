@@ -7,11 +7,12 @@ If this is your first time with this tutorial, you'll need to set up your comput
 npm install -g webpack
 ```
 
-Once you're good, clone this repo:
+Once you're good, clone this repo and install the required modules:
 
 ```bash
 git clone git@github.com:freestylebit/webpack-tutorial.git
 cd webpack-tutorial/
+npm install
 ```
 
 ## General Flow
