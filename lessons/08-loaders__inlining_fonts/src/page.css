@@ -1,0 +1,8 @@
+@font-face {
+  font-family: ubuntu;
+  src: url('fonts/Ubuntu-B.ttf');
+}
+
+body {
+  font-family: ubuntu, san-seif;
+}
