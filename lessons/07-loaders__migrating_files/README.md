@@ -1,0 +1,3 @@
+# Automatic Entry
+
+## Because manual entry is laborious...
