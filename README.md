@@ -31,4 +31,5 @@ File a ticket in the [issue queue](https://github.com/freestylebit/webpack-tutor
 
 ## Cheers!
 Thanks for visiting!
-freestylebit
+
+-freestylebit
