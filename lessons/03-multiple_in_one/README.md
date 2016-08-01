@@ -1,5 +1,3 @@
-# Multiple files
+# Multiple files in One
 
-## For more than one...
-
-
+## For when you want one single easy package...

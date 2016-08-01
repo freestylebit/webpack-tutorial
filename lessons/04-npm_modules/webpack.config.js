@@ -12,7 +12,7 @@ let config = {
   },
   output: {
     path: './dist',
-    filename: 'compressed.[name].js'
+    filename: '[name].js'
   }
 }
 
