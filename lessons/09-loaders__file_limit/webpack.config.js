@@ -18,18 +18,18 @@ let config = {
       // HTML: htm, html
       {
         test: /\.html?$/,
-        loader: "html?name=[name].[ext]"
+        loader: "file?name=[name].[ext]"
       },
       // SVGs: svg, svg?something
       {
         test: /\.svg(\?.*$|$)/,
-        loader: 'url?limit=40000&name=/img/[name].[ext]'
+        loader: 'url?limit=40000&name=img/[name].[ext]'
       },
       // CSS: scss, css
       {
         test: /\.s?css$/,
-        loaders: 'style-loader!css-loader'
-      }
+        loaders: ['style', 'css', 'sass']
+      },
     ]
   }
 }

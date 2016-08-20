@@ -5,8 +5,11 @@ const glob = require('glob');
 
 let config = {
   entry: {
-    'page': './src/page.html',
-
+    'library': [
+      './src/library1.js',
+      './src/library2.js',
+      'jquery'
+    ],
     'scripts': glob.sync('./src/**/*.js'),
   },
   output: {
