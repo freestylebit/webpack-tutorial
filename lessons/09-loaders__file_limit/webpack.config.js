@@ -15,10 +15,15 @@ let config = {
   },
   module: {
     loaders: [
+      // HTML: htm, html
+      {
+        test: /\.html?$/,
+        loader: "file?name=[name].[ext]"
+      },
       // SVGs: svg, svg?something
       {
         test: /\.svg(\?.*$|$)/,
-        loader: 'file-loader?name=/img/[name].[ext]'
+        loader: 'file-loader?limit=10000&name=/img/[name].[ext]'
       },
     ]
   }

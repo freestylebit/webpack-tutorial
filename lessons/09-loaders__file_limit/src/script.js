@@ -1,3 +1,4 @@
 require('./page.css');
 
-alert('hello webpack');
+require('./usa.svg');
+require('./ri.svg');
