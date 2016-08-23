@@ -52,6 +52,6 @@ addEvent('html', 'click', function () {
   require.ensure(['./chunk5.js'], function(require) {
     var chunk = require('./chunk5.js');
     chunk();
-    document.getElementById('content').innerHTML = 'HTML loaded!';
+    document.getElementById('content').innerHTML = '...because HTML is a programming language!';
   });
 });
