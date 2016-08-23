@@ -1,13 +1,13 @@
 # Webpack Tutorial for Practical People
 
 ## Getting Started
-If this is your first time with this tutorial, you'll need to set up your computer first.  Provided you have installed (node)[https://nodejs.org/en/download/package-manager/] and (npm)[http://blog.npmjs.org/post/85484771375/how-to-install-npm] in your system, follow this page to [install webpack](https://webpack.github.io/docs/installation.html).
+If this is your first time with this tutorial, you'll need to set up your computer first.  Provided you have installed [node](https://nodejs.org/en/download/package-manager/) and [npm](http://blog.npmjs.org/post/85484771375/how-to-install-npm) in your system, follow this page to [install webpack](https://webpack.github.io/docs/installation.html) globally (this is key).
 
-```
+```bash
 npm install -g webpack
 ```
 
-Once you're good, clone this repo and install the required modules:
+When you're good, clone this repo and install the required modules:
 
 ```bash
 git clone git@github.com:freestylebit/webpack-tutorial.git
@@ -34,3 +34,4 @@ File a ticket in the [issue queue](https://github.com/freestylebit/webpack-tutor
 Thanks for visiting!
 
 -freestylebit
+[@freestylebit](https://twitter.com/freestylebit)
