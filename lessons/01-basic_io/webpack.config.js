@@ -8,7 +8,7 @@ let config = {
   },
   output: {
     path: './dist',
-    filename: 'compressed.js'
+    filename: 'min.js'
   }
 }
 
