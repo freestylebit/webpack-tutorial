@@ -44,7 +44,7 @@ addEvent('angular1', 'click', function () {
   require.ensure(['./chunk4.js'], function(require) {
     var chunk = require('./chunk4.js');
     chunk();
-    document.getElementById('content').innerHTML = 'Angular2 loaded!';
+    document.getElementById('content').innerHTML = 'Angular loaded!';
   });
 });
 
