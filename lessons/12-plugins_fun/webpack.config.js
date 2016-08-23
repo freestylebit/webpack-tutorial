@@ -29,10 +29,16 @@ let config = {
   },
   postcss: [ autoprefixer({ browsers: ['last 100 versions'] }) ],
   plugins: [
-    // TODO: Uncomment the CommonsChuckPlugin line and see the bundles change in size!
-
-    // Pro-tip: Order matters here.
-    //new webpack.optimize.CommonsChunkPlugin(['library', 'vendor'], '[name].min.js'),
+    // Minify assets.
+    new webpack.optimize.UglifyJsPlugin({
+      mangle: true,
+      output: {
+          comments: false
+      },
+      compress: {
+        warnings: false // https://github.com/webpack/webpack/issues/1496
+      }
+    })
   ]
 }
 
