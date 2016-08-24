@@ -94,6 +94,8 @@ Your new file within dist/ should look like this:
 
 You can see your code embedded within a function at the bottom of this new bundle webpack created for us.  Don't worry about the stuff above.  It's important, but it shouldn't interfere with what you are ultimately acheiving.
 
+Go ahead.  Crack open the **index.html** page in your browser and see an **alert()** happen!
+
 ## Misconception
 
 You might be looking at this and wonder "dang, this is a lot more code than I need for something really simple?  Is this really a benefit?
@@ -107,3 +109,5 @@ That being said, webpack is a great tool to finetune how you control packaging a
 ```bash
 cd ../02-starting_point/
 ```
+
+GO GO GO!

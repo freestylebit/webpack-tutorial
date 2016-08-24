@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 let config = {
   entry: {
-    'script': './js/script.js'
+    'script': './src/script.js'
   },
   output: {
     path: './dist',
