@@ -2,7 +2,9 @@
   "name": "webpack-tutorial",
   "version": "1.0.0",
   "description": "Webpack examples for practical people.",
-  "dependencies": {},
+  "dependencies": {
+    "file-loader": "^0.9.0"
+  },
   "devDependencies": {
     "angular": "^1.5.8",
     "angular2": "^2.0.0-beta.17",
