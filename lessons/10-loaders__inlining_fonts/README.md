@@ -1,3 +1,3 @@
-# Automatic Entry
+# Inlining Fonts
 
-## Because manual entry is laborious...
+##
