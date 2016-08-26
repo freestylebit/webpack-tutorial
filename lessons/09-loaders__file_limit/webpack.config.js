@@ -23,7 +23,7 @@ let config = {
       // SVGs: svg, svg?something
       {
         test: /\.svg(\?.*$|$)/,
-        loader: 'url?limit=40000&name=img/[name].[ext]'
+        loader: 'svg-url-loader?limit=40000&name=img/[name].[ext]'
       },
       // CSS: scss, css
       {
