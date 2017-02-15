@@ -1,26 +1,25 @@
-# Webpack Tutorial for the Practical
-
-# DO NOT FOLLOW THIS TUTORIAL
-
-This follows version 1 of webpack.  We are now on version 2.  Please switch tags by running the following:
-
-```
-git checkout v2
-```
+# Webpack Tutorial for Mortals
 
 ## Getting Started
 If this is your first time with this tutorial, you'll need to set up your computer first.  Provided you have installed [node](https://nodejs.org/en/download/package-manager/) and [npm](http://blog.npmjs.org/post/85484771375/how-to-install-npm) in your system, follow this page to [install webpack](https://webpack.github.io/docs/installation.html) globally (this is key).
 
-```bash
+```
 npm install -g webpack
 ```
-
+or (if you use yarn):
+```
+yarn global webpack
+```
 When you're good, clone this repo and install the required modules:
 
 ```bash
 git clone git@github.com:freestylebit/webpack-tutorial.git
 cd webpack-tutorial/
 npm install
+```
+or (if you use yarn, replace the last command with):
+```
+yarn
 ```
 
 ## General Flow
