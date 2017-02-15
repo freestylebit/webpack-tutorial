@@ -1,5 +1,13 @@
 # Webpack Tutorial for the Practical
 
+# DO NOT FOLLOW THIS TUTORIAL
+
+This follows version 1 of webpack.  We are now on version 2.  Please switch tags by running the following:
+
+```
+git checkout v2
+```
+
 ## Getting Started
 If this is your first time with this tutorial, you'll need to set up your computer first.  Provided you have installed [node](https://nodejs.org/en/download/package-manager/) and [npm](http://blog.npmjs.org/post/85484771375/how-to-install-npm) in your system, follow this page to [install webpack](https://webpack.github.io/docs/installation.html) globally (this is key).
 
