@@ -1,0 +1,8 @@
+
+$color--red: #F00;
+
+#sass {
+  span:first-child {
+    background-color: $color--red;
+  }
+}

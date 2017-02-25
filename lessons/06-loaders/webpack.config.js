@@ -5,9 +5,14 @@ const webpack = require('webpack');
 let config = {
   entry: {
     all: [
+      // Javascript
       './src/typescript.ts',
       './src/coffeescript.coffee',
       './src/javascript.js',
+
+      // Stylesheets
+      './src/sass.scss',
+      './src/less.less',
     ]
   },
   output: {
@@ -18,6 +23,7 @@ let config = {
   },
   module: {
     rules: [
+      // Javascript Loaders
       {
         test: /\.coffee$/,
         use: [
@@ -39,6 +45,31 @@ let config = {
         query: {
           presets: ['es2015']
         }
+      },
+
+      // Stylesheets
+      {
+        test: /\.scss$/,
+        use: [{
+          loader: "style-loader"
+        },
+        {
+          loader: "css-loader"
+        },
+        {
+          loader: "sass-loader"
+        }]
+      },
+      {
+        test: /\.less$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1 }
+          },
+          'less-loader'
+        ]
       }
     ]
   }
