@@ -6,7 +6,8 @@ let config = {
   entry: {
     all: [
       './src/typescript.ts',
-      './src/coffeescript.coffee'
+      './src/coffeescript.coffee',
+      './src/javascript.js',
     ]
   },
   output: {
@@ -31,6 +32,13 @@ let config = {
       {
         test: /\.tsx?$/,
         loader: 'ts-loader'
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
+        }
       }
     ]
   }
