@@ -4,9 +4,10 @@
 class Greeter {
   constructor(public greeting: string) { }
   greet() {
-    return "<h1>" + this.greeting + "</h1>";
+    return this.greeting;
   }
 };
 
-var greeter = new Greeter("Hello, world!");
-document.body.innerHTML = greeter.greet();
+var greeter = new Greeter("Yo soy Typescript!");
+var el = document.getElementById('typescript');
+el.innerHTML = greeter.greet();

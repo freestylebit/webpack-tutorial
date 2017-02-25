@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Webpack examples for practical people.",
   "dependencies": {
+    "coffee-loader": "^0.7.3",
+    "coffee-script": "^1.12.4",
     "ts-loader": "^2.0.1",
-    "typescript": "^2.2.1"
+    "typescript": "^2.2.1",
+    "webpack": "^2.2.1"
   },
   "devDependencies": {},
   "scripts": {
