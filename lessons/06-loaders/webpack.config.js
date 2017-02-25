@@ -16,6 +16,7 @@ let config = {
 
       // Templates
       './src/markdown.js',
+      './src/handlebars.js',
     ]
   },
   output: {
@@ -86,6 +87,10 @@ let config = {
             loader: "markdown-loader",
           }
         ]
+      },
+      {
+        test: /\.handlebars$/,
+        loader: "handlebars-loader"
       }
     ]
   }
