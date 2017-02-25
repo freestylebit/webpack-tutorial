@@ -1,16 +1,20 @@
-# Automatic Entry
+# It's node after all!
 
-*This is kind of like 03-multiple_files/.  Short-sighted by me, so feel free to skim this if you'd like.*
+It's not webpack related, but remember that your webpack.config.js file is an executable nodejs file. Which means you can write javascript to incorporate logic into your configuration. It's useful for stuff like:
 
-## Throw everything into one bag!
+* Automagically collecting a list of all files into a part of the configuration array
+* Toggling between configurations for different environments
+* Enabling certain plugins based for certain situations
 
-Like in 03-multiple_files/, you can use node to mock parts of your configuration object.  Depending on your front end architecture, you might want to create a collection of code into one bundle for simplicity.  To repeat, don't be afraid to concoct algorithms of your own!
-
-```bash
-webpack
+```
+NODE_ENV=dev webpack
 ```
 
-and open the index.html file in this lesson to see all five .js files in src/ just work!
+This should...FINISH THIS SENTENCE
+
+```
+NODE_ENV=notdev webpack
+```
 
 ## Got it!
 
