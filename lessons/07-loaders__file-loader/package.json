@@ -4,7 +4,11 @@
   "description": "Webpack examples for practical people.",
   "dependencies": {
     "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.2",
     "file-loader": "^0.10.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.2",
     "svg-url-loader": "^2.0.2",
     "webpack": "^2.2.1"
   },

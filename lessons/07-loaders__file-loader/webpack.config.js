@@ -6,6 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 let config = {
   entry: {
     'page': './src/page.html',
+    'scripts': './src/script.js',
   },
   output: {
     path: './dist',
@@ -25,12 +26,22 @@ let config = {
       },
       // CSS: scss, css
       {
-        test: /\.s?css$/,
-        loaders: ['style', 'css', 'sass']
+        test: /\.css$/,
+        use: [{
+          loader: "style-loader"
+        },
+        {
+          loader: "css-loader"
+        },
+        {
+          loader: "sass-loader"
+        }]
       },
     ]
   },
   plugins: [
+    // This is an example of how you can flatly copy files from one
+    // location to another (within the context of output).
     new CopyWebpackPlugin([
       {
         from: 'src/*.pdf',
