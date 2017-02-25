@@ -1,13 +1,11 @@
 'use strict';
 
 const webpack = require('webpack');
-const glob = require('glob');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 let config = {
   entry: {
     'page': './src/page.html',
-
-    'scripts': glob.sync('./src/**/*.js'),
   },
   output: {
     path: './dist',
@@ -18,7 +16,7 @@ let config = {
       // HTML: htm, html
       {
         test: /\.html?$/,
-        loader: "file?name=[name].[ext]"
+        loader: "file-loader?name=[name].[ext]"
       },
       // SVGs: svg, svg?something
       {
@@ -31,7 +29,15 @@ let config = {
         loaders: ['style', 'css', 'sass']
       },
     ]
-  }
+  },
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: 'src/*.pdf',
+        to: 'files',
+      },
+    ]),
+  ]
 }
 
 module.exports = config;
