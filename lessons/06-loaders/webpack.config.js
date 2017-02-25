@@ -13,6 +13,9 @@ let config = {
       // Stylesheets
       './src/sass.scss',
       './src/less.less',
+
+      // Templates
+      './src/markdown.js',
     ]
   },
   output: {
@@ -69,6 +72,19 @@ let config = {
             options: { importLoaders: 1 }
           },
           'less-loader'
+        ]
+      },
+
+      // Templates
+      {
+        test: /\.md$/,
+        use: [
+          {
+            loader: "html-loader"
+          },
+          {
+            loader: "markdown-loader",
+          }
         ]
       }
     ]
