@@ -17,41 +17,36 @@ function addEvent(elementID, event, funct){
  * Pay attention now...
  */
 addEvent('jquery', 'click', function () {
-  require.ensure(['./chunk1.js'], function(require) {
-    var chunk = require('./chunk1.js');
-    chunk();
+  import('./chunk1.js').then(function(moment) {
+    var chunk = require('./chunk1.js')();
     document.getElementById('content').innerHTML = 'jQuery loaded!';
   });
 });
 
 addEvent('react', 'click', function () {
-  require.ensure(['./chunk2.js'], function(require) {
-    var chunk = require('./chunk2.js');
-    chunk();
+  import('./chunk2.js').then(function(moment) {
+    var chunk = require('./chunk2.js')();
     document.getElementById('content').innerHTML = 'React loaded!';
   });
 });
 
 addEvent('angular2', 'click', function () {
-  require.ensure(['./chunk3.js'], function(require) {
-    var chunk = require('./chunk3.js');
-    chunk();
+  import('./chunk3.js').then(function(moment) {
+    var chunk = require('./chunk3.js')();
     document.getElementById('content').innerHTML = 'Angular2 loaded!';
   });
 });
 
 addEvent('angular1', 'click', function () {
-  require.ensure(['./chunk4.js'], function(require) {
-    var chunk = require('./chunk4.js');
-    chunk();
+  import('./chunk4.js').then(function(moment) {
+    var chunk = require('./chunk4.js')();
     document.getElementById('content').innerHTML = 'Angular loaded!';
   });
 });
 
 addEvent('html', 'click', function () {
   require.ensure(['./chunk5.js'], function(require) {
-    var chunk = require('./chunk5.js');
-    chunk();
+    var chunk = require('./chunk5.js')();
     document.getElementById('content').innerHTML = '...because HTML is a programming language!';
   });
 });
