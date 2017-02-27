@@ -1,3 +1,11 @@
+@font-face {
+  font-family: ubuntu;
+  src: url('fonts/Ubuntu-B.ttf');
+}
+
+body {
+  font-family: ubuntu, san-seif;
+}
 
 .class1 {
   background: url('usa.svg');
