@@ -1,8 +1,6 @@
 'use strict';
 
 const webpack = require('webpack');
-const glob = require('glob');
-const autoprefixer = require('autoprefixer');
 
 let config = {
   entry: {
