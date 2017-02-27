@@ -3,20 +3,20 @@
  * Roll my own event listener thingy.  You can ignore this block for now...
  * Will not lie.  Stole this from http://stackoverflow.com/a/6348597
  */
-function addEvent(elementID, evnt, funct){
+function addEvent(elementID, event, funct){
   var element = document.getElementById(elementID);
 
   if (element.attachEvent)
-    return element.attachEvent('on'+evnt, funct);
+    return element.attachEvent('on'+event, funct);
   else
-    return element.addEventListener(evnt, funct, false);
+    return element.addEventListener(event, funct, false);
 }
 
 
 /**
  * Pay attention now...
  */
-addEvent('jquery', 'click', function () { 
+addEvent('jquery', 'click', function () {
   require.ensure(['./chunk1.js'], function(require) {
     var chunk = require('./chunk1.js');
     chunk();
@@ -24,7 +24,7 @@ addEvent('jquery', 'click', function () {
   });
 });
 
-addEvent('react', 'click', function () { 
+addEvent('react', 'click', function () {
   require.ensure(['./chunk2.js'], function(require) {
     var chunk = require('./chunk2.js');
     chunk();
@@ -32,7 +32,7 @@ addEvent('react', 'click', function () {
   });
 });
 
-addEvent('angular2', 'click', function () { 
+addEvent('angular2', 'click', function () {
   require.ensure(['./chunk3.js'], function(require) {
     var chunk = require('./chunk3.js');
     chunk();
@@ -40,7 +40,7 @@ addEvent('angular2', 'click', function () {
   });
 });
 
-addEvent('angular1', 'click', function () { 
+addEvent('angular1', 'click', function () {
   require.ensure(['./chunk4.js'], function(require) {
     var chunk = require('./chunk4.js');
     chunk();
@@ -48,7 +48,7 @@ addEvent('angular1', 'click', function () {
   });
 });
 
-addEvent('html', 'click', function () { 
+addEvent('html', 'click', function () {
   require.ensure(['./chunk5.js'], function(require) {
     var chunk = require('./chunk5.js');
     chunk();
