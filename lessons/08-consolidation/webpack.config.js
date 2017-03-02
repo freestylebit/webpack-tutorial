@@ -19,7 +19,7 @@ let config = {
   plugins: [
     // TODO: Uncomment the CommonsChuckPlugin line and see the bundles change in size!
     // Pro-tip: Order matters here.
-    new webpack.optimize.CommonsChunkPlugin({ name: 'library' })
+    //new webpack.optimize.CommonsChunkPlugin({ name: 'library' })
   ]
 }
 
