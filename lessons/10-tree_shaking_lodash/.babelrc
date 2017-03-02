@@ -1,0 +1,7 @@
+{
+  // TODO: Uncomment below to see tree shaking in action!
+  "plugins": ["lodash"],
+  "presets": [
+    ["es2015", { "modules": false }]
+  ]
+}
