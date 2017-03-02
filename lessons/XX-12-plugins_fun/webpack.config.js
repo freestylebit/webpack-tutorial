@@ -27,7 +27,6 @@ let config = {
       },
     ]
   },
-  postcss: [ autoprefixer({ browsers: ['last 100 versions'] }) ],
   plugins: [
     // Minify assets.
     new webpack.optimize.UglifyJsPlugin({
