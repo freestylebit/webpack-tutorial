@@ -10,6 +10,7 @@ let config = {
     ],
 
     'scripts': './src/scripts.js',
+    'scripts2': './src/scripts2.js',
   },
   output: {
     path: './dist',
