@@ -14,7 +14,7 @@ let config = {
     filename: '[name].min.js'
   },
   module: {
-    loaders: [
+    rules: [
       // HTML: htm, html
       {
         test: /\.html?$/,
