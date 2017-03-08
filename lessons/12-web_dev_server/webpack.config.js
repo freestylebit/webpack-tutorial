@@ -14,7 +14,8 @@ let config = {
     port: 1234,
     headers: { 'Access-Control-Allow-Origin': '*' }
   },
-  devtool: 'source-map'
+  // Uncomment this for a good time.
+  //devtool: 'source-map'
 }
 
 module.exports = config;
