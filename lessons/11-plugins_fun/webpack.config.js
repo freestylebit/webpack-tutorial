@@ -1,8 +1,9 @@
 'use strict';
 
 const webpack = require('webpack');
-const glob = require('glob');
-const autoprefixer = require('autoprefixer');
+const ProgressPlugin = require('webpack/lib/ProgressPlugin');
+
+const development = process.env.NODE_ENV === 'development';
 
 let config = {
   entry: {
@@ -14,31 +15,50 @@ let config = {
     filename: '[name].min.js'
   },
   module: {
-    loaders: [
+    rules: [
       // HTML: htm, html
       {
         test: /\.html?$/,
-        loader: "file?name=[name].[ext]"
+        loader: "file-loader?name=[name].[ext]"
       },
-      // CSS: scss, css
       {
         test: /\.s?css$/,
-        loaders: ['style', 'css', 'sass', 'postcss-loader']
+        use: [{
+          loader: "style-loader"
+        },
+        {
+          loader: "css-loader"
+        },
+        {
+          loader: "sass-loader"
+        }]
       },
     ]
   },
   plugins: [
-    // Minify assets.
-    new webpack.optimize.UglifyJsPlugin({
-      mangle: true,
-      output: {
-          comments: false
-      },
-      compress: {
-        warnings: false // https://github.com/webpack/webpack/issues/1496
-      }
-    })
+    // We will tack plugins in the logic below.
   ]
+}
+
+if (!development) {
+  config.plugins.push(
+    //new webpack.NoErrorsPlugin(),
+    // Compress and minify!
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: { warnings: false },
+      sourceMap: false,
+    }),
+    // Define global variables for your bundles to use.
+    new webpack.DefinePlugin({
+      number: 2,
+    }),
+    // Prioritize chunk IDs by how often they're used.
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    // Provides more verbose output on compile time.
+    new ProgressPlugin((percentage, msg) => {
+      console.log((percentage * 100) + '%', msg);
+    })
+  );
 }
 
 module.exports = config;

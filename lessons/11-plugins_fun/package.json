@@ -2,7 +2,14 @@
   "name": "webpack-tutorial",
   "version": "1.0.0",
   "description": "Webpack examples for practical people.",
-  "dependencies": {},
+  "dependencies": {
+    "css-loader": "^0.26.4",
+    "file-loader": "^0.10.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1"
+  },
   "devDependencies": {
     "postcss-loader": "^0.10.1"
   },
