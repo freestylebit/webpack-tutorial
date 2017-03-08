@@ -1,2 +1,2 @@
 
-export default a = 'I am A...';
+export const a = 'I am A...';

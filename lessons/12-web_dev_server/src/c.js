@@ -1,2 +1,2 @@
 
-export default b = ' and I am file c!';
+export const c = ' and I am file c!';

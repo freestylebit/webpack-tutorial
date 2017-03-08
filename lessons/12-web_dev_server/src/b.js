@@ -1,4 +1,4 @@
 
-import c from './c.js';
+import { c } from './c.js';
 
-export default b = `I am file b ${c}`;
+export const b = `I am file b ${c}`;

@@ -8,12 +8,13 @@ let config = {
   },
   output: {
     filename: '[name].js',
-    publicPath: 'http://localhost:3808/webpack/',
+    publicPath: 'http://localhost:1234/dist/',
   },
   devServer: {
-    port: 3808,
+    port: 1234,
     headers: { 'Access-Control-Allow-Origin': '*' }
-  }
+  },
+  devtool: 'source-map'
 }
 
 module.exports = config;
