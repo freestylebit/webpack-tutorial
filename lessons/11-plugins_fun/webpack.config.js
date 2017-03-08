@@ -42,7 +42,6 @@ let config = {
 
 if (!development) {
   config.plugins.push(
-    //new webpack.NoErrorsPlugin(),
     // Compress and minify!
     new webpack.optimize.UglifyJsPlugin({
       compressor: { warnings: false },
