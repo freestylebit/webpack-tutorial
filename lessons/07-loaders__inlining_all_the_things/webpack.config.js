@@ -30,7 +30,7 @@ let config = {
         test: /\.(eot|ttf|woff2?)(\?.*$|$)/,
         loader: 'url-loader'
         // The following works, too, assuming you have a web server set up.
-        // loader: 'file?name=some_dir/[name].[ext]'
+        // loader: 'file-loader?name=some_dir/[name].[ext]'
       },
       // SVGs: svg, svg?something
       {

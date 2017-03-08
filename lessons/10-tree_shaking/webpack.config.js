@@ -21,6 +21,7 @@ let config = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
+        // This is necessary for webpack to recognize dead dependencies.
         loader: 'babel-loader',
       }
     ]
