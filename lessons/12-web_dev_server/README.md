@@ -8,4 +8,4 @@ Uncomment line in `webpack.config.js`
 ```
 node_modules/.bin/webpack-dev-server
 ```
-Use Google Chrome to debug
+Use Google Chrome to debug (source maps)
