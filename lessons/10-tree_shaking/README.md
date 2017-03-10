@@ -74,7 +74,7 @@ Now go back to `src/scripts.js` and uncomment the two lines (3 and 7) and run we
 webpack -p
 ```
 
-Again, search for "needed".  See your newly used function?  :D
+Again, search for "needed". You should get two hits. See your newly used function?  :D
 
 # Awesome!
 
