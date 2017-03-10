@@ -10,6 +10,5 @@ webpack
 
 # Cool stuff!
 
-```
-cd ../03-multiple_files
-```
+
+[cd ../03-multiple_files](https://github.com/freestylebit/webpack-tutorial/tree/master/lessons/03-multiple_files)
