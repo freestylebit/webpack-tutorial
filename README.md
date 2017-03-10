@@ -25,9 +25,9 @@ yarn
 ## General Flow
 If this is your first time here, start with the first lesson and follow the README.md for additional guidance:
 
-```bash
-cd lessons/01-basic_io/
-```
+
+[cd lessons/01-basic_io/](https://github.com/freestylebit/webpack-tutorial/tree/master/lessons/01-basic_io)
+
 
 In general, navigate to the **lessons/** directory and go through each directory one by one. There should be a README.md that should give you a synopsis on what the webpack configurations do.
 
