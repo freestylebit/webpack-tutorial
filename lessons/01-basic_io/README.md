@@ -10,6 +10,5 @@ webpack
 
 # Sweet, what's next?
 
-```
-cd [../02-starting_point](https://github.com/freestylebit/webpack-tutorial/tree/master/lessons/02-starting_point)
-```
+
+[cd ../02-starting_point](https://github.com/freestylebit/webpack-tutorial/tree/master/lessons/02-starting_point)
