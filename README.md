@@ -25,13 +25,20 @@ yarn
 ## General Flow
 If this is your first time here, start with the first lesson and follow the README.md for additional guidance:
 
-
 [cd lessons/01-basic_io/](https://github.com/freestylebit/webpack-tutorial/tree/master/lessons/01-basic_io)
-
 
 In general, navigate to the **lessons/** directory and go through each directory one by one. There should be a README.md that should give you a synopsis on what the webpack configurations do.
 
 This repo is written with the expectation everyone starts from page one (in this case, 01-basic_io) since each lesson has its own special steps for compilations.
+
+
+## Don't be shy.  Hack away!
+
+I rigged up these examples to highlight some of the start features of webpack (and this is still the surface). Give it a spin the first time round, but feel free to try and break things to see how webpack reacts. It's a good way to experiment and learn the inner quirks of how the tool works!
+
+## Note
+
+* If you run `npm install` or `yarn` in the root of this repo, you should have all the dependencies you need installed (the `node_modules/` directory in each demo are simple symlinks to the one in the root). However, for your sake, I also made sure the `package.json` file in each demo reflects what you need to make the demo work, so you can reference them for your own benefit!
 
 ## Questions?
 
@@ -42,4 +49,4 @@ Thanks for visiting!
 
 -freestylebit
 
-[@freestylebit](https://twitter.com/freestylebit)
+[@freestylebit](https://www.twitter.com/freestylebit)
