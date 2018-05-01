@@ -1,5 +1,9 @@
 # Webpack Tutorial for Mortals
 
+## A Supplement for Recent Talks
+https://www.meetup.com/DC-JavaScript/events/237892043/
+https://moduscreate.com/events/nova-js-meetup-webpack-for-practical-mortals/
+
 ## Getting Started
 If this is your first time with this tutorial, you'll need to set up your computer first.  Provided you have installed [node](https://nodejs.org/en/download/package-manager/) and [npm](http://blog.npmjs.org/post/85484771375/how-to-install-npm) in your system, follow this page to [install webpack](https://webpack.github.io/docs/installation.html) globally (this is key).
 
