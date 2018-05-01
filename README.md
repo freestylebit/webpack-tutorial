@@ -2,6 +2,7 @@
 
 ## A Supplement for Recent Talks
 https://www.meetup.com/DC-JavaScript/events/237892043/
+
 https://moduscreate.com/events/nova-js-meetup-webpack-for-practical-mortals/
 
 ## Getting Started
